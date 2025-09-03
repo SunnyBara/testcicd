@@ -9,4 +9,4 @@ jobs:
       - name: Set up python
         uses: actions/setup-python@v5
       - name: Tests
-        run: python -m delamerde/tests/test
+        run: python -m unittest tests/test.py
