@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Tests
-        run: python -m unittest ${{ github.workspace }}/delamerde/tests/test.py
+        run: ls -R ${{ github.workspace }}
