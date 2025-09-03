@@ -2,7 +2,7 @@ name: My test
 on: [push]
 jobs:
   Test:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Tests
         run: python -m unittest tests/test.py
