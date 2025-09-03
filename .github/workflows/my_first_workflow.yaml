@@ -4,5 +4,9 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - name: Set up python
+        uses: actions/setup-python
       - name: Tests
-        run: ls -R ${{ github.workspace }}
+        run: python -m delamerde/unittest tests/test.py
